@@ -1,0 +1,106 @@
+.Hidden {
+	display: none;
+}
+
+/* Messages. */
+/*----------------------------------------------------------------------------*/
+
+.Message {
+	border: 1px solid;
+	color: #000;
+	display: block;
+	list-style: none;
+	margin: 0;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+
+.Message.Error {
+	color: #990000;
+	background-color: #ffcccc;
+}
+
+.Message.Warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+
+.Message.Success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+.Message.Info {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+
+.Message.Hidden {
+	border-color: transparent;
+	border-top-color: #ddd;
+	margin: 0;
+}
+
+/* Forms. */
+/*----------------------------------------------------------------------------*/
+.FormTabBar {
+	padding: 0.5em;
+	padding-bottom: 0;
+}
+
+.FormTab {
+	background-color: #e0e0e0;
+	border: 2px solid #c5c5c5;
+	border-bottom: 0;
+	color: #333 !important;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 1px;
+	padding: 0.5em;
+	position: relative;
+	z-index: 1;
+}
+a.FormTab:hover {
+	background-color: #eeeeee !important;
+}
+.FormTab.Active:hover {
+	background-color: #d9ebfb !important;
+}
+.FormTab.Active {
+	background-color: #d9ebfb;
+	border: 2px solid #aad5ff;
+	border-bottom: 0;
+	color: #000;
+	text-decoration: none;
+	z-index: 3;
+}
+
+.FormTabContent {
+	background-color: #d9ebfb;
+	border: 2px solid #aad5ff;
+	display: none;
+	margin-top: -2px;
+	padding: 0.5em;
+	position: relative;
+	z-index: 2;
+}
+.FormTabContent.Active {
+	display: block;
+}
+.FormTabContent .Message {
+	margin-bottom: 1px;
+}
+.FormTabContent .Message.Hidden {
+	border-top-color: #c2e1ff;
+}
+
+.ErrorCountInFormTab {
+	background-color: #ffcccc;
+	border: 1px solid;
+	color: #990000;
+	display: inline-block;
+	font-size: xx-small;
+	margin-left: 0.5em;
+	padding-left: 3px;
+	padding-right: 3px;
+}
